@@ -57,6 +57,7 @@ Result: JSON
 }
 
 Url: "localhost:8080/api/product/edit"
+Method: PUT
 Description: Edit product
 Parameter: Product (in the Body, choose "raw" and type "JSON", and past this example)
 {
@@ -77,9 +78,10 @@ Result: JSON
 }
 
 Url: "localhost:8080/api/product/delete/{product_id}"
+Method: DELETE
 Parameter: Product_id , example of url to delete a product with the id=1, localhost:8080/api/product/delete/1
 On postman, past this url and choose "Delete" method and choose "none" in the Body.
-Result : true
+Result : Boolean (example: true)
 
 
 
