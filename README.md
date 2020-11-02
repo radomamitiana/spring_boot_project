@@ -4,7 +4,6 @@ RESTFULL application with a basic CRUD to manage a product
 Steps to build the project locally:
 Requirements: 
 - Install JDK in your PC, install the last version, this is the url to install JDK in your PC https://www.oracle.com/java/technologies/javase/jdk14-archive-downloads.html
-- Install PostgreSQL in your PC and install PgAdmin 4, this is the url to install posgreSQL https://www.postgresql.org/download/windows/
 - Install an IDE of your choice (Eclipse or IntelliJ), this is the url to install IntelliJ https://www.jetbrains.com/fr-fr/idea/download/#section=windows and choose community version, it's for developper
 
 Steps to build the project locally: 
