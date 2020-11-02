@@ -16,12 +16,12 @@ public class ProductController {
     @Autowired
     private ProductSA productSA;
 
-    @PostMapping("")
+    @PostMapping("/create")
     public ResponseEntity<ProductDTO> handlerCreateProduct(@RequestBody ProductDTO productDTO) {
         return ResponseEntity.status(HttpStatus.CREATED).body(productSA.create(productDTO));
     }
 
-    @PutMapping("")
+    @PutMapping("/edit")
     public ResponseEntity<ProductDTO> handlerUpdateProduct(@RequestBody ProductDTO productDTO) {
         return ResponseEntity.status(HttpStatus.OK).body(productSA.update(productDTO));
     }

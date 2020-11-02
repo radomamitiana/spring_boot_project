@@ -20,7 +20,7 @@ public class ProductSMImpl implements ProductSM {
 
     @Override
     public List<Product> findAll() {
-        return productRepository.findByIsDeleted(false);
+        return productRepository.findAll();
     }
 
     @Override

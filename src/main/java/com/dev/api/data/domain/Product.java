@@ -1,5 +1,6 @@
 package com.dev.api.data.domain;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity
+@Data
 @Table(name = "products")
 public class Product {
     @Id
