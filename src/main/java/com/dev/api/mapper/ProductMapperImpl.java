@@ -18,6 +18,7 @@ public class ProductMapperImpl implements ProductMapper {
             productDTO.setName(product.getName());
             productDTO.setPrice(product.getPrice());
             productDTO.setCreatedDate(product.getCreatedDate());
+            productDTO.setIsDeleted(product.getIsDeleted());
             return productDTO;
         }
         return null;
@@ -31,6 +32,7 @@ public class ProductMapperImpl implements ProductMapper {
             product.setName(productDTO.getName());
             product.setPrice(productDTO.getPrice());
             product.setCreatedDate(productDTO.getCreatedDate());
+            product.setIsDeleted(productDTO.getIsDeleted());
             return product;
         }
         return null;

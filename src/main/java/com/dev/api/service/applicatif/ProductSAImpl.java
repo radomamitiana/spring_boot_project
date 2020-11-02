@@ -27,6 +27,7 @@ public class ProductSAImpl implements ProductSA {
         if (Objects.isNull(productDTO.getCreatedDate())) {
             productDTO.setCreatedDate(LocalDate.now());
         }
+        productDTO.setIsDeleted(false);
         this.verifyData(productDTO, false);
         return productMapper.productToProductDTO(productSM.saveOrUpdate(
                 productMapper.productDTOToProduct(productDTO)

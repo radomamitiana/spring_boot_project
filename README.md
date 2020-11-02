@@ -28,13 +28,15 @@ Response: Array of product
     "id": 1,
     "name": "Produit1",
     "createdDate": "2020-11-02",
-    "price": 2000.0
+    "price": 2000.0,
+	"isDeleted": false
 },
 {
     "id": 2,
     "name": "Produit2",
     "createdDate": "2020-11-02",
-    "price": 6000.0
+    "price": 6000.0,
+	"isDeleted": false
 }
 ]
 
@@ -51,7 +53,8 @@ Result: JSON
     "id": 1,
     "name": "Produit1",
     "createdDate": "2020-11-02",
-    "price": 1500.0
+    "price": 1500.0,
+	"isDeleted": false
 }
 
 Url: "localhost:8080/api/product/edit"
@@ -59,16 +62,19 @@ Description: Edit product
 Parameter: Product (in the Body, choose "raw" and type "JSON", and past this example)
 {
     "id": 1,
-	"name": "Produit1",
-    "price": 2000.0
+	"name": "Produit1 edit",
+	 "createdDate": "2020-11-02",
+    "price": 2000.0,
+	"isDeleted": false
 }
 
 Result: JSON
 {
     "id": 1,
-    "name": "Produit1",
+    "name": "Produit1 edit",
     "createdDate": "2020-11-02",
-    "price": 2000.0
+    "price": 2000.0,
+	"isDeleted": false
 }
 
 Url: "localhost:8080/api/product/delete/{product_id}"

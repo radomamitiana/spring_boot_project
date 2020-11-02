@@ -13,4 +13,5 @@ public class ProductDTO {
     private String name;
     private LocalDate createdDate;
     private Double price;
+    private Boolean isDeleted;
 }
